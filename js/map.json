@@ -1,0 +1,26 @@
+
+{ "data": [
+     {"name": "海门", "value": 9},
+     {"name": "鄂尔多斯", "value": 12},
+     {"name": "招远", "value": 12},
+     {"name": "舟山", "value": 12},
+     {"name": "齐齐哈尔", "value": 14},
+     {"name": "盐城", "value": 15},
+     {"name": "赤峰", "value": 16},
+     {"name": "青岛", "value": 18},
+     {"name": "乳山", "value": 18},
+     {"name": "金昌", "value": 19},
+	{ "name": "南宁",  "value": 37 },
+	{ "name": "北京",  "value": 79},
+	{ "name": "郑州",  "value": 113},
+	{ "name": "兰州",  "value": 99 },
+	{ "name": "呼和浩特",  "value": 58},
+	{ "name": "武汉",  "value": 273},
+	{ "name": "石家庄",  "value": 147},
+	{ "name": "长沙",  "value": 175 },
+	{ "name": "合肥",  "value": 229 },
+	{ "name": "大庆",  "value": 279 }
+]
+
+}
+

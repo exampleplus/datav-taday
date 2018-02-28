@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!--<meta http-equiv="refresh" content="6000">-->
+		<title>当天借贷信息</title>
+		<link rel="stylesheet" type="text/css" href="css/main.min.css"/>
+		<style>
+	.tagBall {
+      width: 350px;
+      height: 350px;
+      position: relative;
+    }
+    .tag {
+      display: block;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      color: #000;
+      text-decoration: none;
+      font-size: 15px;
+      font-family: "微软雅黑";
+      font-weight: bold;
+      will-change: transform;
+    }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="rot">
+				<div class="rot_c">
+					<div class='test'>
+						<img src="img/circle.png" alt=""/>
+					</div>
+				</div>
+			</div>
+			<!--实时时间  start-->
+			<div id="showtimes">
+				<p id="time"></p>
+				<p id="year"></p>
+			</div>
+			<!--实时时间  end-->
+			<!--圆环动画 start-->
+			<div class="circle ">
+				<img src="img/user_in.png" alt="" class="user_border"/>
+				<div class="circle_in">
+					
+				</div>
+				<!--旋转动画 start-->
+				<div class="animat">
+					<div class="tagBall wrap">
+						<p style='color:#fff' class="per">个人信息验证</p>
+						<a href="" class="tag" title="">姓名</a>
+						<a href="" class="tag" title="">学历</a>
+						<a href="" class="tag" title="">婚姻状况</a>
+						<a href="" class="tag" title="">工作单位</a>
+						<a href="" class="tag" title="">户籍地址</a>
+						<a href="" class="tag" title="">常用地址</a>
+						<a href="" class="tag" title="">信用卡</a>
+						<a href="" class="tag" title="">在线时长</a>
+						<a href="" class="tag" title="">通讯录</a>
+						<a href="" class="tag" title="">紧急联系人</a>
+						<a href="" class="tag" title="">年龄</a>
+						<a href="" class="tag" title="">收入状况</a>
+						<a href="" class="tag" title="">支护宝评分</a>
+				    </div>
+					<!--信用评估-->
+					<div class="wrap2">
+						<p style='color:#fff'>信用评估</p>
+						<div class="cube rot-3d">
+							<div class="out-front">还款记录</div>
+							<div class="out-back">严重拖欠</div>
+							<div class="out-left">借款记录</div>
+							<div class="out-right">工作稳定</div>
+							<div class="out-top">评分</div>
+							<div class="out-bottom">还款能力</div>
+						</div>
+					</div>
+					<!--反欺诈分析-->
+					<p style='color:#fff' class="analysis">反欺诈分析</p>
+					<div class="wrap3">
+						<div class="disappear mbt_20">
+							<div class="translate1 mbt_20">
+								<span class="color_green">黑中介分析</span>
+								 <div class="bg-gray">
+								 	<div class="bgblue"></div>
+								 </div>
+							</div>
+							<div class="translate2 mbt_20">
+								<span class="color_green">通讯录分析</span>
+								 <div class="bg-gray">
+								 	<div class="bgblue"></div>
+								 </div>
+							</div>
+							<div class="translate3 mbt_20">
+								<span class="color_green">工作地址分析</span>
+								 <div class="bg-gray">
+								 	<div class="bgblue"></div>
+								 </div>
+							</div>
+							<div class="translate4 mbt_20">
+								<span class="color_green">身份信息分析</span>
+								 <div class="bg-gray">
+								 	<div class="bgblue"></div>
+								 </div>
+							</div>
+							<div class="translate5 mbt_20">
+								<span class="color_green">手机号分析</span>
+								 <div class="bg-gray">
+								 	<div class="bgblue"></div>
+								 </div>
+							</div>
+							<div class="translate6 mbt_20">
+								<label class="color_green">银行卡信息分析</label>
+								 <div class="bg-gray">
+								 	<div class="bgblue"></div>
+								 </div>
+							</div>
+							<div class="translate8 mbt_20">
+								<label class="color_green">家庭地址分析</label>
+								 <div class="bg-gray">
+								 	<div class="bgblue"></div>
+								 </div>
+							</div>
+							<div class="translate9">
+								<label class="color_green">学籍信息分析</label>
+								 <div class="bg-gray">
+								 	<div class="bgblue"></div>
+								 </div>
+							</div>
+						</div>
+						<div class="show">
+							<div class="translate1 mbt_20">
+								<label class="color_green">社交行为分析</label>
+								 <div class="bg-gray">
+								 	<div class="bgblue"></div>
+								 </div>
+							</div>
+						</div>
+						<div class="show2">
+							<div class="translate7">
+								<label class="color_green">紧急联系人分析</label>
+								 <div class="bg-gray">
+								 	<div class="bgblue"></div>
+								 </div>
+							</div>
+						</div>
+					</div>
+					<!--禁止项分析-->
+					<div class="wrap4">
+						<p style='color:#fff'>禁止项分析</p>
+						<div class="cont">
+							<div class="mbt_30"><span class="opacity1 cont_show">年龄</span><span class="opacity2 opacity1_show">风险名单</span><span class="opacity1 cont_show1">在网时长</span></div>
+							<div class=""><span class="opacity2 opacity2_show">黑中介</span><span class="opacity1 cont_show2">多头借贷</span><span class="opacity2 opacity3_show">催收拒绝</span></div>
+						</div>
+					</div>
+				</div>
+				<!--旋转动画 end-->
+				<!--banner轮播  start-->
+				<div class="banner">
+					<ul class='clearfix'>
+					</ul>
+				</div>
+				<!--banner轮播  end-->
+				<!--<div class="circle1-bg1">
+			        <div class="circle1-bg2-1"></div>
+			        <div class="circle1-bg2-2"></div>
+				</div>-->
+				<!--通过或不通过-->
+				<div class="pass_before">
+					<p></p>
+				</div>
+				<!--通过或不通过-->
+				<!--当天统计-->
+				<div class="day-static">
+					<p class="total">当天统计</p>
+					<p class="borrwAmount">放贷金额   <span id="total_momey"></span></p>
+					<p class="number_apply">申请借款人数 <span id="borrow_per"></span></p>
+					<p class="number_success">成功借款人数 <span id="success_per"></span></p>
+				</div>
+				<!--倒计时-->
+				<div id="clock">00:00:00</div>
+				<!--个人信息展示start-->
+				<div class="info">
+				
+				</div>
+				<!--个人信息end-->
+				<!--进度条效果  start-->
+				<div class="progress">
+					<!--个人信息验证-->
+					<div class="person_vertify">
+						<div class="person_test">
+							<img src="img/person_test.png" alt="个人信息验证"/>
+						</div>
+						<span class="person_check">个人信息验证</span>
+						<div class="bar">
+							<span class="bar-unfill">
+								<span class="bar-fill"></span>
+							</span>
+						</div>
+					</div>
+					<!--个人信息验证-->
+					<!--信用评估-->
+					<div class="credit_assess">
+						<div class="credit">
+							<img src="img/credit.png" alt="信用评估"/>
+						</div>
+						<span class="credit_ass">信用评估</span>
+						<!--<span class="credit_score"></span>-->
+						<div class="bar1">
+							<span class="bar1-unfill">
+								<span class="bar1-fill"></span>
+							</span>
+						</div>
+					</div>
+					<!--信用评估-->
+					<!--反欺诈分析-->
+					<div class="uncheat_thinking">
+						<div class="uncheat">
+							<img src="img/uncheat.png" alt="反欺诈分析" />
+						</div>
+						<span class="uncheat_ass">反欺诈分析</span>
+						<div class="bar2">
+							<span class="bar2-unfill">
+								<span class="bar2-fill"></span>
+							</span>
+						</div>
+					</div>
+					<!--反欺诈分析-->
+					<!--禁止项分析-->
+					<div class="forbid_thinking">
+						<div class="forbid">
+							<img src="img/forbid.png" alt="禁止项分析" />
+						</div>
+						<span class="forbid_ass">禁止项分析</span>
+						<div class="bar3">
+							<span class="bar3-unfill">
+								<span class="bar3-fill"></span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!--禁止项分析-->
+				<!--进度条效果  end-->
+				<!--地图-->
+			 	<div class="echarts" id="main" style="height: 400px;width:500px;"></div>
+			</div>
+			<div class="line"></div>
+		</div>
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/echarts.min.js"></script>
+		<script src="js/china.js"></script>
+		<script src="js/label.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
